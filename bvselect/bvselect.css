@@ -19,8 +19,14 @@ Developed by: Bruno Vieira
 	padding: 20px;
 	box-shadow: 0 0px 10px rgba(0,0,0,0.2);
 	border-radius: 6px;
-	cursor: pointer
+	cursor: pointer;
+	transition: color 0.4s;
 }
+
+body.night .bv_atual {
+	color: white;
+}
+
 .bv_disabled {
 	background-color: #e6e6e6!important;
 	cursor: default!important;
@@ -32,8 +38,14 @@ Developed by: Bruno Vieira
 	background-color:transparent!important;
 }
 .bv_background {
-	background-color: #fff
+	background-color: #fff;
+	transition: background-color 0.4s;
 }
+
+body.night .bv_background {
+	background-color: hsl(209, 23%, 22%);
+}
+
 .arrow {
 	border: solid grey;
 	margin-left: 20px;
@@ -112,6 +124,11 @@ Developed by: Bruno Vieira
     font-size: 16px;
 	font-weight: 600;
 	padding: 12px 28px 10px 10px;
+	transition: color 0.4s;
+}
+
+body.night .bv_ul_inner li {
+	color: white;
 }
 
 .bv_ul_inner i {
@@ -149,8 +166,13 @@ Developed by: Bruno Vieira
 	font-weight: bold;
 }
 .bv_ul_inner li:hover {
-	background-color: #eee
+	background-color: #eee;
 }
+
+body.night .bv_ul_inner li:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
 .nofocus
 {
 	background-color: rgba(255, 255, 255, 0.1) !important;
