@@ -218,3 +218,20 @@ document.querySelector('.back-btn').addEventListener('click', e => {
     document.querySelector('.country-details').style.display = "none";
     document.querySelector("body").classList.remove('details-active');
 })
+
+
+// +++ Switching to night mode
+let isNight = false;
+const nightBtn = document.querySelector('.dark-mode');
+nightBtn.addEventListener('click', e => {
+    if (!isNight) {
+        isNight = true;
+        document.querySelector('.header-wrapper').classList.add('night');
+        document.querySelector('body').classList.add('night');
+    }
+    else {
+        isNight = false;
+        document.querySelector('.header-wrapper').classList.remove('night');
+        document.querySelector('body').classList.remove('night');
+    }
+})

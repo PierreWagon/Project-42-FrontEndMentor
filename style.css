@@ -9,10 +9,12 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     width: 100%;
     background-color: hsl(0, 0%, 98%);
+    transition: background-color 0.4s;
 }
 
 h1, p {
     color: hsl(200, 15%, 8%);
+    transition: color 0.4s;
 }
 
 input, select, option {
@@ -32,13 +34,13 @@ option[value=""][disabled] {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .header-wrapper p {
     font-size: 1.1em;
     font-weight: 800;
     cursor: pointer;
-    display: none;
 }
 
 .header-wrapper img {
@@ -74,6 +76,7 @@ option[value=""][disabled] {
     background-repeat: no-repeat;
     background-position-y: 50%;
     background-position-x: 15px;
+    transition: background-color 0.4s;
 }
 
 .main-wrapper input::placeholder {
@@ -98,6 +101,7 @@ option[value=""][disabled] {
     background-color: #fff;
     overflow: hidden;
     box-shadow: 0 0px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.4s;
 }
 
 .country-img {
@@ -138,6 +142,7 @@ option[value=""][disabled] {
     background-color: #fff;
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
     padding: 75px 50px;
+    transition: background-color 0.4s, color 0.4s;
 }
 
 .big-country-wrapper {
@@ -219,6 +224,23 @@ option[value=""][disabled] {
 
 body.details-active {
     overflow: hidden;
+}
+
+
+
+/* ----- Night mode colors ----- */
+.header-wrapper.night, body.night, body.night .country-details {
+    background-color: hsl(207, 26%, 17%);
+}
+
+body.night .country, body.night .main-wrapper input, body.night .back-btn, body.night .border-country {
+    background-color: hsl(209, 23%, 22%);
+}
+.header-wrapper.night p, body.night h1, body.night .country-info p, body.night .main-wrapper input, body.night .back-btn, body.night .country-details, body.night .country-details p {
+    color: hsl(0, 0%, 100%);
+}
+.header-wrapper.night img {
+    content: url(images/icon-sun.svg);
 }
 
 
