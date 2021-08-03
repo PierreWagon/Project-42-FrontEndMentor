@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="bvselect/bvselect.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Rest countries API</title>
+
+</head>
+<body>
+
+  <header class="header-wrapper">
+    <h1>Where in the world ?</h1>
+    <p class="dark-mode"><img src="images/icon-moon.svg"> Dark Mode </p>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="search-wrapper">
+      <input type="text" placeholder="Search for a country..." id="country-search">
+
+      <select id="region">
+        <option value="all">Worldwide</option>
+        <option value="africa">Africa</option>
+        <option value="america">Americas</option>
+        <option value="asia">Asia</option>
+        <option value="europe">Europe</option>
+        <option value="oceania">Oceania</option>
+      </select>
+    </div>
+
+    <!-- Wraps all the dynamically generated countries cards -->
+    <div class="countries-wrapper">
+      <div class="country-details">
+        <p class="back-btn"> Back </p>
+        <div class="big-country-wrapper">
+          <div class="big-country-img"></div>
+          <div class="big-country-text">
+            <h2 class="big-name">Pays</h2>
+            <div class="big-country-text-infos-wrapper">
+              <div class="big-country-text-infos1">
+                <p> Native Name: <span class="big-native-name"></span> </p>
+                <p> Population: <span class="big-population"></span> </p>
+                <p> Region: <span class="big-region"></span> </p>
+                <p> Sub Region: <span class="big-sub-region"></span> </p>
+                <p> Capital: <span class="big-capital"></span> </p>
+              </div>
+              <div class="big-country-text-infos2">
+                <p> Top Level Domain: <span class="big-domain"></span> </p>
+                <p> Currencies: <span class="big-currencies"></span> </p>
+                <p> Languages: <span class="big-languages"></span> </p>
+              </div>
+            </div>
+
+            <div class="border-countries">
+              <p>Border Countries : <span class="big-border-countries"></span> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="country">
+        <div class="country-img"></div>
+        <div class="country-info">
+          <p class="name"></p>
+          <p> Population: <span class="population"></span></p>
+          <p> Region: <span class="region"></span></p>
+          <p> Capital: <span class="capital"></span></p>
+        </div>
+      </div> -->
+    </div>
+
+  </main>
+
+
+<script src="bvselect/bvselect.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
